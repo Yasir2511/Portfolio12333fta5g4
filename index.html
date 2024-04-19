@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yaser Portfolio</title>
+    <script src="<script src="https://kit.fontawesome.com/66e068e45d.js" crossorigin="anonymous"></script>"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img style="height: 100px;width:100px;" src="yasertext.jpeg" class="logo">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <!-- <li><a href="#">PORTFOLIO</a></li> -->
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text"style="margin:70px;">
+                <p>software engineer</p>
+                <h1>hi,i'm<span> Yaser</span> Viqar <br> from india </h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----about---- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image2.jpeg" alt="img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Pursuing Computer Engineering in R.V.Institute Of Technology
+                        Technology excites me Certain skills that I have worked with include Data Structure And  Algorithm (Java).
+                        I am highly motivated Software Engineer, inclined towards implementing my nurtured set of technical knowledge and expertise towards development in a leading corporate, and highly keen to learn every milestone of an advancement to keep work updated and forward.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Programming Language</li>
+                            <li><span>C</span><br>Programming Language</li>
+                            <li><span>Web Development</span><br>HTML,CSS and JS</li>
+                            <li><span>RDBMS</span><br>SQL</li>
+                            <li><span>Data Structure</span><br>Array and String</li>
+                            <li><span>Github</span><br>Git and Github</li>
+                            <li><span>Visual Studio</span><br>Code Editor</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>3 Weeks of Web Development Training. </span><br>from XTRUDE Engineers </li>
+                            <li><span>Hospital Management System Project</span><br>In C language</li>
+                            <li><span>Meesho Clone </span><br>Website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Dr. APJ Abdul Kalam Technical University </span><br>Lucknow, India </li>
+                            <li><span>B.Tech|CSE </span><br>Pursuing/In 2025 Completed</li>
+                            <li><span>12th (67.8%) </span><br>May/2021</li>
+                        </ul>
+                    </div>
+                  </div>
+             </div>
+        </div>
+    </div>
+    <!-- -----services------>
+    <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+             <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Java</h2>
+                <p> I possess a strong grasp of the Java programming language, covering its core concepts, syntax, and object-oriented principles.</p>
+                 <a href="#">Learn more</a> 
+            </div>
+            <div>
+                <i class="fas-crop-alt"></i>
+                <h2>Web Development</h2>
+                <p>My proficiency in frontend technologies allows me to create visually appealing and responsive user interfaces, ensuring an engaging user experience across various devices and screen sizes.</p>
+                 <a href="#">Learn more</a> 
+            </div>
+            <div>
+                <h2>Data Structure</h2>
+                <p> My proficiency in data structures enables me to analyze problems systematically and devise efficient solutions that meet specific performance requirements.</p>
+                 <a href="#">Learn more</a> 
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- -----portfolio---- -->
+    <!-- ---------contact------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>yaserviqar06@gmail.com</p>
+                    <p>+91 7668082810</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yaser-viqar-566a23249/"><img src="linkedin.png" alt="linkedin"style="height: 40px;"></a>
+                        <a href="https://github.com/Yasir2511"><img src="git.jpg" alt="github" style="height: 40px; border: solid white 1px;"></a>
+                     
+                    </div> 
+                    <br>
+                    <a href="" download class="btn btn2"style="border:solid red 1px;color:#fff">Download CV</a>
+                </div>
+                <div class="contact-right"> 
+                    <form name="submit-to-google-sheet">
+                     <input type="text" name="Name" placeholder="Your Name" required>
+                     <input type="email" name="E-mail"placeholder="Your E-mail" required>
+                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" class="btn btn2"style="height:30px;width:55px">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Yaser.Made with by Easy Tutorials</p>
+        </div>
+    </div>
+    <script> 
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWtDe3hjGdMF_a211jmqiEGnUBTHY3rCMZWv9ob2lw0fZo9zdPLYFQE7FjiyoW0N2F/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
